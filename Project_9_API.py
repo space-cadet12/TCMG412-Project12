@@ -187,4 +187,4 @@ def kv_retrieve(key): # Create a function for the GET and DELETE fucntions
 
 # Set app to run @ specified IP and port
 if __name__ == "__main__":
-	app.run(host='http://34.29.1.212/', port = 80)
+	app.run(host='34.29.1.212', port = 80)
