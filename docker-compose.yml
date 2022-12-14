@@ -1,0 +1,16 @@
+version: "3.4"
+services:
+  api:
+    image: dockernewbie12/project9api:initial
+    ports:
+      - "4000:4000"
+    networks:
+      - team_1_net
+  redis-server:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+    networks:
+      - team_1_net
+networks:
+  team_1_net:
