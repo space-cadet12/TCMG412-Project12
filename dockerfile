@@ -11,8 +11,8 @@ COPY . /app
 # Install any needed Python packages with pip
 RUN pip install --trusted-host pypi.python.org -r requirements.txt
 
-# Make port 4000 available to the world outside this container
-EXPOSE 4000
+# Make port 80 available to the world outside this container
+EXPOSE 80
 
 # Run app.py when the container launches
 CMD ["python3", "Project_9_API.py"]
