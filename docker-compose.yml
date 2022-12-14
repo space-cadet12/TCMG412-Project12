@@ -1,7 +1,7 @@
 version: "3.4"
 services:
   api:
-    image: dockernewbie12/project9api:finalv2
+    image: dockernewbie12/project9api:final
     ports:
       - "80:80"
     networks:
