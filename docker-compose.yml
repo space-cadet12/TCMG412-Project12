@@ -3,7 +3,7 @@ services:
   api:
     image: dockernewbie12/project9api:initial
     ports:
-      - "80:4000"
+      - "80:80"
     networks:
       - team_1_net
   redis-server:
