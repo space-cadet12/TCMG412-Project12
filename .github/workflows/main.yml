@@ -46,9 +46,6 @@ jobs:
 
     - name: Launch the servers using docker compose
 
-      #env:
-
-        #SLACK_URL: ${{ secrets.SLACK_URL_DEV }}
 
       run: |
 
