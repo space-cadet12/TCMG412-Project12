@@ -64,7 +64,7 @@ jobs:
 
     - name: Run the API test suite
 
-      run: 
+      run: |
 
 	python3 apiTester.py --port 80 --host localhost
 
