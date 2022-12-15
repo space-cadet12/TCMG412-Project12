@@ -4,6 +4,8 @@ name: Team 1 Project12
 
 on:
 
+  workflow_dispatch:
+
   push:
 
     branches: [ master ]
