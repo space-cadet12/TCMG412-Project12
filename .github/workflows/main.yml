@@ -69,7 +69,7 @@ jobs:
 
       run: |
 
-        docker login -u ${{ secrets.dockernewbie12 }} --password-stdin -p ${{ secrets.DeadLog_12docker }}
+        echo ${{ secrets.DeadLog_12docker }} | docker login --username ${{ secrets.dockernewbie12}} --password-stdin
 
         docker image tag project12api dockernewbie12/project12api:latest
 
