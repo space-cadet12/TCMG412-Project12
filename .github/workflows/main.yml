@@ -66,9 +66,9 @@ jobs:
 
       run: |
 
-		cd test_suite
+	cd test_suite
 
-		apiTester.py --port 80 --host localhost
+	apiTester.py --port 80 --host localhost
 
 
 
