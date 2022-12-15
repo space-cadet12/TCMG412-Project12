@@ -34,26 +34,33 @@ jobs:
 
     - name: Build the API Docker image
 
-      run: docker build -t projec12api . 
+      run: |
+        docker build -t projec12api . 
 
           
 
     - name: Launch the servers using docker compose
 
 
-      run: docker-compose up -d 
+      run: |
+        docker-compose up -d 
 
    
 
     - name: Verify that the correct containers are running 
 
-      run: docker ps 
+      run: |
+        docker ps 
 
-
+    - name: Install Python
+      
+      run: |
+        sudo apt-get install python3
 
     - name: Run the API test suite
 
-      run: python apiTester.py 
+      run: |
+        python3 apiTester.py 
 
 
     - name: Push the new image to Docker Hub
