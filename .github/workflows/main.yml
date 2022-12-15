@@ -4,10 +4,6 @@ name: Team 1 Project12
 
 on:
 
-  commit:
-    
-    branches: [ master ]	
-
   push:
 
     branches: [ master ]
