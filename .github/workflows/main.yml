@@ -61,10 +61,7 @@ jobs:
 
     - name: Run the API test suite
 
-      run: |
-
-	python apiTester.py 
-
+      run: python apiTester.py 
 
 
     - name: Push the new image to Docker Hub
