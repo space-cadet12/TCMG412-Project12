@@ -4,6 +4,10 @@ name: Team 1 Project12
 
 on:
 
+  commit:
+    
+    branches: [ master ]	
+
   push:
 
     branches: [ master ]
@@ -36,13 +40,11 @@ jobs:
 
       run: |
 
-        cd flask-api
-
         docker build -t projec12api . 
 
           
 
-    - name: Launch the service using docker-compose 
+    - name: Launch the servers using docker compose
 
       #env:
 
@@ -50,11 +52,9 @@ jobs:
 
       run: |
 
-        cd flask-api
-
         docker-compose up -d 
 
-    
+   
 
     - name: Verify that the correct containers are running 
 
@@ -64,9 +64,7 @@ jobs:
 
     - name: Run the API test suite
 
-      run: |
-
-	cd test_suite
+      run: 
 
 	apiTester.py --port 80 --host localhost
 
