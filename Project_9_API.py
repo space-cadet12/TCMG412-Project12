@@ -35,7 +35,6 @@ def fact(num):
 			factorial = factorial*i
 		return jsonify(input=int(num), output=int(factorial))
     
-
 #Fibonacci Extension
 @app.route('/fibonacci/<int(signed=True):x>')
 def fibo(x):
