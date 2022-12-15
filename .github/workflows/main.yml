@@ -1,6 +1,6 @@
 name: Team 1 Project12
 
-​
+
 
 on:
 
@@ -12,19 +12,19 @@ on:
 
     branches: [ master ]
 
-​
+
 
 jobs:
 
-​
+
 
   build:
 
-​
+
 
     runs-on: ubuntu-latest
 
-​
+
 
     steps:
 
@@ -60,7 +60,7 @@ jobs:
 
       run: docker ps 
 
-​
+
 
     - name: Run the API test suite
 
@@ -70,7 +70,7 @@ jobs:
 
 		apiTester.py --port 80 --host localhost
 
-​
+
 
     - name: Push the new image to Docker Hub
 
