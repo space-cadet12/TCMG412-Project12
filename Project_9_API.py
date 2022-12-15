@@ -155,7 +155,7 @@ def kv_retrieve(key): # Create a function for the GET and DELETE fucntions
         'result': False,
         'error': None
     }
-
+ 
     # Attempt to pull data from storage layer.
     try:
         test_value = r.get(key)
