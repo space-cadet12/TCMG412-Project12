@@ -37,7 +37,7 @@ jobs:
     - name: Build the API Docker image
 
       run: |
-        docker build -t projec12api . 
+        docker build -t project12api . 
 
           
 
