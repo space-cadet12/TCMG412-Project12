@@ -34,18 +34,14 @@ jobs:
 
     - name: Build the API Docker image
 
-      run: |
-
-        docker build -t projec12api . 
+      run: docker build -t projec12api . 
 
           
 
     - name: Launch the servers using docker compose
 
 
-      run: |
-
-        docker-compose up -d 
+      run: docker-compose up -d 
 
    
 
